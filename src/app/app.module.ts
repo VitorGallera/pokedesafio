@@ -1,7 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
+
 import { PokesModule } from './pokes/pokes.module';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -11,7 +13,8 @@ import { PokesModule } from './pokes/pokes.module';
   ],
   imports: [
     BrowserModule,
-    PokesModule
+    PokesModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

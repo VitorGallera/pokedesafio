@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { PokeService } from './pokes/poke/poke.service';
+
 
 @Component({
   selector: 'app-root',
@@ -7,10 +9,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   
-  pokes = [
-    {
-      id: 'Bulba',
-      pokedex_entry: '2'
-    }
-  ];
+  pokes: Object[] = [];
+
+  constructor(pokeService: PokeService){
+    pokeService.listFromUser('pokemon')
+    .subscribe(pokes => this.pokes = pokes);
+  }
+
 }

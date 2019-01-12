@@ -3,7 +3,8 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 
 import { PokesModule } from './pokes/pokes.module';
-import { HttpClientModule } from '@angular/common/http';
+import { AppRoutingModule } from './app.routing.module';
+
 
 
 
@@ -14,7 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     PokesModule,
-    HttpClientModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

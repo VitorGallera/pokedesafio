@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Poke } from './poke';
 
 const API = 'https://orgnova.concore.io';
 
@@ -11,7 +12,7 @@ export class PokeService {
         listFromUser(userName :string) {
 
             return this.http
-            .get<Object[]>(API + '/pokemon');
+            .get<Poke[]>(API + '/pokemon');
             
         
     }

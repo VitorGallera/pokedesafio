@@ -7,13 +7,7 @@ import { PokeService } from './pokes/poke/poke.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent  {
   
-  pokes: Object[] = [];
-
-  constructor(pokeService: PokeService){
-    pokeService.listFromUser('pokemon')
-    .subscribe(pokes => this.pokes = pokes);
-  }
-
+  
 }

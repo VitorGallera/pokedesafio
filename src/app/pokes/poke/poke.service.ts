@@ -16,4 +16,9 @@ export class PokeService {
             
         
     }
+
+    findById(id: string){
+
+        return this.http.get<Poke>(API + '/pokemon/' + id);
+    }
 }

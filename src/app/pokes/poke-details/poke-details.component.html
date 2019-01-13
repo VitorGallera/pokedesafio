@@ -1,0 +1,17 @@
+
+
+
+<div class="card" style="width: 18rem;" *ngIf="(poke$ | async) as poke">
+    <img class="card-img-top" [src]=" poke.sprites.front_default" [alt]="poke.name">
+    <div class="card-body">
+      <h5 class="card-title text-capitalize">{{ poke.name }}</h5>
+      <h6 class="card-subtitle mb-2 text-muted"> Nº{{ poke.id }}</h6>
+      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+      <ul class="list-group list-group-flush">
+          <li class="list-group-item">Altura: {{ poke.height }}</li>
+          <li class="list-group-item">Base Experience: {{ poke.base_experience }} </li>
+          <li class="list-group-item">Peso: {{ poke.weight }}  </li>
+        </ul>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>

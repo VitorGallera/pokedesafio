@@ -1,7 +1,9 @@
-<div class="card" style="width: 18rem;">
-    <div class="card-body">
-      <h5 class="card-title">{{ id }}</h5>
-      <p class="card-text">{{pokedex_entry}}</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+<a class="deco-none" [routerLink]="[ id]">
+  
+  <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="text-capitalize card-title">{{ id }}</h5>
+        <p class="card-text"> Nº{{pokedex_entry}}</p>
+      </div>
     </div>
-  </div>
+</a>

@@ -4,6 +4,7 @@ import { AppComponent } from './app.component';
 
 import { PokesModule } from './pokes/pokes.module';
 import { AppRoutingModule } from './app.routing.module';
+import { ErrorsModule } from './errors/errors.module';
 
 
 
@@ -15,7 +16,8 @@ import { AppRoutingModule } from './app.routing.module';
   imports: [
     BrowserModule,
     PokesModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ErrorsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

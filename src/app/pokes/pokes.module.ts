@@ -4,6 +4,8 @@ import { CommonModule } from '@angular/common';
 
 import { PokeComponent } from './poke/poke.component';
 import { HttpClientModule } from '@angular/common/http';
+import { PokeDetailsModule } from './poke-details/poke-details.module';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
     declarations: [ 
@@ -12,7 +14,9 @@ import { HttpClientModule } from '@angular/common/http';
     ],
     imports: [
         HttpClientModule,
-        CommonModule
+        CommonModule,
+        PokeDetailsModule,
+        RouterModule
     ]
 })
 export class PokesModule {}

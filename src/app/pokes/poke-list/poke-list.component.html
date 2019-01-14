@@ -1,6 +1,30 @@
-<ap-poke
-    *ngFor="let pokemon of pokes" 
-    [id]="pokemon.id"
-    [pokedex_entry]="pokemon.pokedex_entry">
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Bem Vindo ao PokeDesafio!</h1>
+    <p class="lead">Logo abaixo você pode conferir uma lista completa de todos os pokémons!</p>
+  </div>
+</div>
 
-</ap-poke>
+<div class="text-center mt-3 mb-3">
+    <form>
+        <input
+            class="rounded"
+            type="search"
+            placeholder="search..."
+            autofocus
+            (keyup)="filter = $event.target.value">
+    </form>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <ap-pokes [pokes]="pokes | filterById:filter"></ap-pokes>
+
+    </div>
+
+  </div>
+</div>
+
+  
+

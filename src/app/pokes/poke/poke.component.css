@@ -1,14 +1,15 @@
-.deco-none {
-    color: inherit;
-    text-decoration: inherit;
+
+  .list-pokemon{
+    align-items: center;
+    align-content: center;
   }
-  
-  .deco-none:link {
-    color: inherit;
-    text-decoration: inherit;
+  .item-pokemon{
+    width: 150px;
+    margin-bottom: 20px;
   }
-  
-  .deco-none:hover {
-    color: inherit;
-    text-decoration: inherit;
-  }
+
+  @media (max-width: 575.98px) {
+    .item-pokemon{
+      width: 125px;
+    }
+   }

@@ -1,4 +1,4 @@
-<a class="deco-none" [routerLink]="[ id]">
+<!-- <a class="deco-none" [routerLink]="[ id]">
   
   <div class="card" style="width: 18rem;">
       <div class="card-body">
@@ -6,4 +6,7 @@
         <p class="card-text"> Nº{{pokedex_entry}}</p>
       </div>
     </div>
-</a>
+</a> -->
+
+    <!-- <a [routerLink]="[id]" class=" text-capitalize item-pokemon">{{ id }}</a> -->
+    <li [routerLink]="[id]" class="text-center text-capitalize list-group-item item-pokemon">{{ id }} </li>

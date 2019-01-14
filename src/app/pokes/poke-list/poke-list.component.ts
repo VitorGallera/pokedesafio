@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PokeService } from '../poke/poke.service';
+import { Poke } from '../poke/poke';
 
 @Component({
   selector: 'app-poke-list',
@@ -8,7 +9,8 @@ import { PokeService } from '../poke/poke.service';
 })
 export class PokeListComponent implements OnInit {
 
-  pokes: Object[] = [];
+  pokes: Poke[] = [];
+  filter: string = '';
   
   constructor(private pokeService: PokeService){
   }

@@ -1,0 +1,17 @@
+
+<p class="text-center text-muted" *ngIf="!pokes.length">
+    Desculpe, ainda não adiconamos esse Pokémon!
+</p>
+
+ <ul class="list-group">
+  <li *ngFor="let cols of rows"  class="row">
+    <div *ngFor="let poke of cols" class="col-4 col-center">
+
+      <ap-poke 
+      [id]="poke.id"
+      [pokedex_entry]="poke.pokedex_entry">
+      </ap-poke>
+
+    </div>
+  </li>
+</ul>

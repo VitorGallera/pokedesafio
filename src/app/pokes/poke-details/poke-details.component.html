@@ -12,9 +12,12 @@
               <li class="list-group-item">Altura: {{ poke.height }}</li>
               <li class="list-group-item">Base Experience: {{ poke.base_experience }} </li>
               <li class="list-group-item">Peso: {{ poke.weight }}  </li>
+              <li class="list-group-item">Capturados: {{ getCapturados(poke.name) }}  </li>
             </ul>
             <div class="card-body">
                 <a [routerLink]="['/pokemon']" class="card-link">Voltar</a>
+                <a (click)="setCookies(poke.name)" class="card-link"><i class="fa fa-plus-square fa-1x" ></i></a>
+                
             </div>  
         </div>
       </div>

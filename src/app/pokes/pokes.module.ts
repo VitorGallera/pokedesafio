@@ -8,6 +8,7 @@ import { PokeDetailsModule } from './poke-details/poke-details.module';
 import { RouterModule } from '@angular/router';
 import { PokesComponent } from './poke-list/pokes/pokes.component';
 import { FilterById } from './poke-list/filter-by-id.pipe';
+import { CookieService } from 'ngx-cookie-service';
 
 @NgModule({
     declarations: [ 
@@ -15,6 +16,9 @@ import { FilterById } from './poke-list/filter-by-id.pipe';
         PokeListComponent,
         PokesComponent,
         FilterById
+    ],
+    providers: [
+        CookieService
     ],
     imports: [
         HttpClientModule,

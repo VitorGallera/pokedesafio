@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnChanges } from '@angular/core';
 import { PokeService } from '../poke/poke.service';
 import { Poke } from '../poke/poke';
 
@@ -8,18 +8,16 @@ import { Poke } from '../poke/poke';
   styleUrls: ['./poke-list.component.css']
 })
 export class PokeListComponent implements OnInit {
-
   pokes: Poke[] = [];
   filter: string = '';
-  
-  constructor(private pokeService: PokeService){
+
+  constructor(private pokeService: PokeService) {
   }
-  
   ngOnInit(): void {
     this.pokeService
-    .listFromUser('pokemon')
-    .subscribe(pokes => this.pokes = pokes);
+      .listFromUser('pokemon')
+      .subscribe(pokes => this.pokes = pokes);
   }
 
-
+ 
 }

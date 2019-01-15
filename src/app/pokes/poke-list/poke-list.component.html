@@ -1,18 +1,27 @@
-<div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <h1 class="display-4">Bem Vindo ao PokeDesafio!</h1>
-    <p class="lead">Logo abaixo você pode conferir uma lista completa de todos os pokémons!</p>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col center">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/640px-International_Pok%C3%A9mon_logo.svg.png" alt="">
+    </div>
+      <!-- <div class="col-6">
+          <div class="jumbotron jumbotron-fluid">
+              <div class="container">
+                <h1 class="display-4">Bem Vindo ao PokeDesafio!</h1>
+                <p class="lead">Logo abaixo você pode conferir uma lista completa de todos os pokémons!</p>
+              </div>
+            </div>
+      </div>
+      <div class="col-6">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/640px-International_Pok%C3%A9mon_logo.svg.png" alt="">
+      </div> -->
   </div>
 </div>
 
-<div class="text-center mt-3 mb-3">
-    <form>
-        <input
-            class="rounded"
-            type="search"
-            placeholder="search..."
-            autofocus
-            (keyup)="filter = $event.target.value">
+<div class="mt-3 mb-5">
+    <form class="center">
+      <i aria-hidden="true" class="fa fa-search mr-2 fa-2x azul-logo"></i>
+            <input class="form-control poke-form" type="text"  autofocus (keyup)="filter = $event.target.value" placeholder="Digite o Pokémon desejado!">
     </form>
 </div>
 

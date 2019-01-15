@@ -5,7 +5,7 @@
     <div class="card" style="width: 18rem;" *ngIf="(poke$ | async) as poke">
         <img class="card-img-top" [src]=" poke.sprites.front_default" [alt]="poke.name">
         <div class="card-body">
-          <h3 class=" text-center card-title text-capitalize">{{ poke.name }}</h3>
+          <h5 class=" text-center card-title text-capitalize">{{ poke.name }}</h5>
           <h6 class=" text-center card-subtitle mb-2 text-muted"> Nº{{ poke.id }}</h6>
           <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
           <ul class="list-group list-group-flush">
@@ -14,10 +14,9 @@
               <li class="list-group-item">Peso: {{ poke.weight }}  </li>
               <li class="list-group-item">Capturados: {{ getCapturados(poke.name) }}  </li>
             </ul>
-            <div class=" card-body card-body-btn">
+            <div class="card-body">
                 <a [routerLink]="['/pokemon']" class="card-link">Voltar</a>
-                <button type="button" class="btn btn-primary" (click)="setCookies(poke.name)">Capturar!</button>
-                <!-- <a ><i class="fa fa-plus-square fa-1x" ></i></a> -->
+                <a (click)="setCookies(poke.name)" class="card-link"><i class="fa fa-plus-square fa-1x" ></i></a>
                 
             </div>  
         </div>

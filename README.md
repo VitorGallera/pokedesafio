@@ -6,8 +6,8 @@
   <li>Navegar até o repositório no promp de comando node.js</li>
   <li>Rodar comando 'npm install'</li>
   <li>Rodar comando 'ng serve'</li>
-
-
+</ul>
+<br>
 Desafio para vaga de desenvolvedor Front-End
 
 Nessa API tem dois endpoints:
